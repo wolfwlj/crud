@@ -1,0 +1,87 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .main-content {
+    padding-inline: 10%;
+    flex: 1 1 80%;
+    min-height: 130vh;
+  }
+  
+  .portfolio {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+  }
+  
+  .portfolio-item {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .portfolio-item > p {
+      padding: 0.6em;
+  }
+  .plaatje {
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.753);
+    background-blend-mode: multiply;
+    transition: all ease-in-out 300ms;
+  }
+  .plaatje:hover {
+    background-size: 110%;
+    background-blend-mode: initial;
+    color: rgba(245, 245, 245, 0.596);
+  }
+  .een {
+    grid-row: 1/5;
+    grid-column: 1/4;
+    background-color: black;
+  }
+  .twee {
+    grid-row: 1/5;
+    grid-column: 4/7;
+    background-color: black;
+  }
+  .drie {
+    grid-row: 5/9;
+    grid-column: 1/4;
+    background-color: black;
+  }
+  .vier {
+    grid-row: 5/9;
+    grid-column: 4/7;
+    background-color: black;
+  }
+  .vier:hover {
+    background-size: 95%;
+  }
+  .vijf {
+    grid-row: 9/13;
+    grid-column: 1/4;
+    background-color: black;
+  }
+  .zes {
+    grid-row: 9/13;
+    grid-column: 4/7;
+    background-color: black;
+  }
+  .zeven {
+    grid-row: 13/17;
+    grid-column: 1/4;
+    background-color: black;
+  }
+  .acht {
+    grid-row: 13/17;
+    grid-column: 4/7;
+    background-color: black;
+  }
